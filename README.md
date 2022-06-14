@@ -1,2 +1,11 @@
 # kickstarter-analysis
-Performing analysis on Kickstarter data to uncover trends
+## Overview of the Project
+The goal of this analysis was to use Kickstarter data to determine how successful various campaigns were based on their start date as well as their funding goals. 
+### Purpose
+Using the Kickstarter data, the objective was to determine which elements might make a theater oriented campaign more successful. The client for the study was hoping to establish a play and was looking for some insights into which start dates and which goal amounts lead to the highest chances of success for her particular campaign. 
+## Analysis and Challenges
+### Analysis of Outcomes Based on Launch Date
+In this section, the information is taken from data set and used in a pivot table to show how theater campaigns faired in each month of the year based on start date. To do this, the year had to be extracted from the Date Created Conversion column using the *Year()* fuction, and from there, a pivot table was created from the entire worksheet. The filters for the pivot table had to be the Parent Category column so that we could narrow down just the theater outcomes, and the Years column. The rows field is populated with years as well so that we can group all the years that the data spans by month and see the outcomes based on the month the campaign began. The Outcomes column populates the values and column fields because it is needed as our y-axis for our chart and it will be what is represented on the chart. The chart below is representative of the data in the pivot table and shows that there is the greatest number of successful theater based kickstarter campaigns in the month of May. The beginning of the year is less successful with a large uptick from April to May and then a gradual downward trend throughout the rest of the year from that point. This can be misleading though, as the month with the largest number of failed campaigns is also May. This goes to show that a percentage based comparison could yield more enlightening results.
+![image](https://user-images.githubusercontent.com/107013312/173493315-697d1bff-389d-4d2d-9e9d-d8f9a8122f8d.png)
+### Analysis of Outcomes Based on Goals
+In this section, data is pulled from the Kickstarter dataset in order to create a chart that that displays the percentage of successful, failed, and canceled theater based Kickstarter campaigns based on their goal amounts. 
